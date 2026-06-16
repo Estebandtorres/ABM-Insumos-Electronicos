@@ -252,8 +252,11 @@ public class FrmInsumos extends JFrame {
 
         try {
             int idEliminado = Integer.parseInt(txtId.getText());
-            insumosDAO.eliminarInsumo(Integer.parseInt(txtId.getText()));
-            historialCambios.add("[ELIMINADO] - Registro con ID: " + idEliminado);
+            String nombreEliminado = txtNombre.getText().trim();
+            String descripcionEliminada = txtDescripcion.getText().trim();
+            
+            insumosDAO.eliminarInsumo(idEliminado);
+            historialCambios.add("[ELIMINADO] - ID: " + idEliminado + " | Nombre: " + nombreEliminado + " | Descripcion: " + descripcionEliminada);
             mostrarMensaje("Insumo eliminado correctamente.");
             limpiarFormulario();
             cargarTabla();
