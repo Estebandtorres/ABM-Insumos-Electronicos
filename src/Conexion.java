@@ -1,7 +1,7 @@
-import java.sql.Connection;//Es el canal de comunicacion entre la aplicacion y la base de datos."Puente" por donde van y vienen los datos.
-import java.sql.DriverManager;//Es la clase que se encarga de gestionar las conexiones a la base de datos. Proporciona el método getConnection() para establecer una conexión.
-import java.sql.SQLException;//Es la red de seguridad para el manejo de errores
-import java.sql.Statement;//Una vez q tengo la conexion abierta. El Statement es ese vehículo o mensajero que envuelve tus comandos de texto en SQL (como el CREATE DATABASE o CREATE TABLE)y los transporta a traves de la conecion para la base de datos los ejecute.
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 public class Conexion {
